@@ -1,0 +1,12 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pagination-bg);
+  padding: 0px 24px;
+  border-radius: 2px;
+
+  .pagination {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}

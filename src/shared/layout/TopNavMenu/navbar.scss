@@ -1,0 +1,168 @@
+@mixin navbar-settings {
+  padding: 38px var(--page-margin-991) 27px;
+
+  @media (min-width: 992px) {
+    padding: 38px var(--page-margin) 27px;
+  }
+  background: var(--bg-default-color);
+  width: 100%;
+}
+
+.navbar {
+  @include navbar-settings;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.5s;
+
+  &.home-page-mode {
+    background: linear-gradient(180deg, #f9fafb 0%, rgba(249, 250, 251, 0.711312) 26.61%, rgba(249, 250, 251, 0) 88.95%);
+  }
+
+  .d-lg-none {
+    @media (min-width: 992px) {
+      display: none !important;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--size-24);
+    font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 0;
+  }
+
+  .currency-button {
+    padding: 0 8px;
+    min-width: 56px;
+  }
+
+  .dict-dropdown {
+    &.dropdown-item:active {
+      background: transparent;
+
+      li:active {
+        color: var(--event-color);
+      }
+    }
+  }
+
+  .item-menu-dropdown {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    background-color: var(--dropdown-color);
+    font-size: var(--size-14);
+    color: var(--main-color);
+    border: none;
+    margin-top: 16px;
+  }
+
+  .user-button {
+    & > button span,
+    & > button:after {
+      color: var(--side-color);
+      font-size: var(--size-14);
+    }
+
+    button {
+      padding: 0;
+      box-shadow: none !important;
+    }
+
+    &.show button {
+      background-color: transparent;
+      border: none;
+
+      &:after {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .dropdown-item {
+      color: var(--main-color);
+
+      &:hover {
+        color: var(--additional-color);
+      }
+
+      span {
+        font-size: 0.9375rem;
+      }
+
+      svg {
+        margin-right: 4px;
+      }
+    }
+
+    & > button {
+      &,
+      &:focus,
+      &:hover,
+      &:not(:disabled):not(.disabled):active {
+        background-color: transparent;
+        border: none;
+      }
+
+      &:after {
+        transition: all 0.2s ease-in;
+        transform: rotate(0);
+      }
+    }
+  }
+
+  a:not([href]):not([tabindex]),
+  .menu-link {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--main-color);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    padding: 4px 4px;
+    margin: 0 4px;
+    position: relative;
+
+    &:not([href]):not([tabindex]):hover,
+    &.active,
+    &:hover {
+      color: var(--additional-color);
+    }
+
+    &.active:after {
+      position: absolute;
+      content: '';
+      border-bottom: 2px solid var(--additional-color);
+
+      width: 100%;
+      bottom: -23px;
+      left: 0;
+    }
+  }
+
+  .brand-icon {
+    height: 40px;
+    width: auto;
+    max-width: 171px;
+    display: inline-block;
+    margin-right: 4px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.collapse-menu {
+  @include navbar-settings;
+  top: 60px;
+  position: fixed;
+  z-index: 100;
+  max-height: 100%;
+  overflow-y: auto;
+}

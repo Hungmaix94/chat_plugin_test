@@ -1,0 +1,12 @@
+.page-size-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+
+  & > div:first-of-type {
+    //color: $additional-text-color;
+    font-weight: var(--bold);
+    font-size: var(--size-14);
+  }
+}

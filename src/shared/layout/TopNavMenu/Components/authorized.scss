@@ -1,0 +1,33 @@
+$margin-left-right: 48px;
+
+.authorized-menu {
+  color: var(--gray-700);
+  font-size: var(--size-16);
+
+  .menu-section {
+    margin-left: $margin-left-right;
+    margin-right: $margin-left-right;
+    font-weight: 500;
+    display: block;
+    font-family: var(--dm-sans-medium);
+    margin-bottom: 8px;
+    &:not(:first-of-type) {
+      padding-top: 12px;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    color: var(--gray-700);
+    display: block;
+    padding: 8px 24px;
+    margin: 0 24px;
+    transition: all 0.3s linear;
+    background-color: var(--white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--gray-100);
+    }
+  }
+}

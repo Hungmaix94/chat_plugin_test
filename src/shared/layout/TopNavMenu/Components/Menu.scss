@@ -1,0 +1,118 @@
+.menu-backdrop {
+  pointer-events: none;
+
+  &.show {
+    pointer-events: all;
+  }
+}
+
+.menu {
+  margin-right: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: 0;
+  max-width: 400px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100px;
+  background-color: var(--gray-50);
+  z-index: 1041;
+  padding-top: 40px;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out 0s, visibility 300ms linear;
+
+  &.show {
+    visibility: visible;
+    transform: translateX(0);
+    right: 0;
+  }
+
+  .modal-content {
+    border: none;
+    border-radius: 2px;
+    padding: 32px 0;
+    background-color: var(--gray-50);
+    height: 100%;
+  }
+
+  .logo {
+    height: 40px;
+    margin: 0 24px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      max-width: 171px;
+    }
+  }
+
+  .body-wrapper {
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+
+    .sign-in-button {
+      margin-bottom: 54px;
+      min-height: 42px;
+    }
+
+    .register-button {
+      min-height: 42px;
+    }
+    .mr-ml {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    .text-inner-line {
+      overflow: hidden;
+      text-align: center;
+      font-size: var(--size-16);
+      font-weight: 500;
+      line-height: 20px;
+      font-family: var(--dm-sans-medium);
+
+      &:before,
+      &:after {
+        background-color: var(--line-color);
+        content: '';
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+
+      &:before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+
+      &:after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
+    }
+
+    .language-wrapper {
+      border-top: 1px solid var(--line-color);
+      border-bottom: 1px solid var(--line-color);
+      font-size: var(--size-14);
+      color: var(--language-color);
+      padding: 16px;
+      display: flex;
+      margin-top: 24px;
+    }
+
+    .media-wrapper {
+      margin: 25px 24px 24px;
+
+      svg {
+        padding: 16px 12px;
+        height: 21px;
+      }
+    }
+  }
+}

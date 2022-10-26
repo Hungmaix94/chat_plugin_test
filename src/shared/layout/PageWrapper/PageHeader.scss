@@ -1,0 +1,47 @@
+$title-color: var(--main-color);
+
+.page-header {
+  margin: 0 var(--page-margin-negative-991) 24px;
+  padding: 14px var(--page-margin-991) 16px;
+  &:not(.without-bg) {
+    background-color: var(--white);
+  }
+
+  @media (min-width: 992px) {
+    margin: 0 var(--page-maring-negative) 24px;
+    padding: 14px var(--page-margin) 16px;
+  }
+  .page-title {
+    font-size: var(--size-36);
+    color: var(--gray-800);
+    font-family: var(--dm-serif-display);
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+
+  .page-subtitle {
+    color: var(--gray-700);
+    font-size: var(--size-16);
+    font-family: var(--dm-sans);
+  }
+
+  &.column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    & > div:first-of-type {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 900px) {
+      flex-direction: row;
+      align-items: flex-end;
+      & > div:first-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#app-container.without-margin main .page-header {
+  margin: 0 0 24px;
+}

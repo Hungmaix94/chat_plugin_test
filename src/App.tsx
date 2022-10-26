@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { MessengerChat } from "react-messenger-chat-plugin";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <MessengerChat
+        pageId="109268111769502"
+        themeColor={"#3578E5"}
+        loggedInGreeting="loggedInGreeting"
+        loggedOutGreeting="loggedOutGreeting"      
+      />
     </div>
   );
 }

@@ -1,0 +1,37 @@
+.wizard-wrapper-container {
+  min-height: 500px;
+
+  form {
+    .react-select__menu-list {
+      max-height: 126px;
+    }
+  }
+
+  &.second-version {
+    .part-form-title {
+      font-family: 'Montserrat Black', 'Montserrat Regular', 'Montserrat', sans-serif;
+      font-weight: 900;
+      color: #1d1c1f;
+      font-size: 1.75rem;
+      border-bottom: none;
+      margin-bottom: 46px;
+    }
+  }
+  display: flex;
+  flex-grow: 1;
+
+  .carousel {
+    width: 100%;
+  }
+
+  .wrapper-wizard-part-form {
+    height: 100%;
+  }
+
+  form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

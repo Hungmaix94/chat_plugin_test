@@ -1,0 +1,44 @@
+.btn-collapse-overflow {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  height: auto;
+  max-width: 15ch;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  transition: 1s ease;
+  width: 100%;
+  position: relative;
+
+  .text-truncate.collapse-text {
+    max-height: 1.5rem;
+    transition: max-height 0.2s ease;
+    transition-delay: 0.34s;
+    text-align: left;
+    color: var(--main-color);
+
+    &.isOpen {
+      max-height: 0;
+      transition-delay: 0s;
+      transition: all 0s ease;
+    }
+  }
+
+  .collapse.show div {
+    color: var(--main-color);
+    word-break: break-word;
+  }
+}
+
+.btn-collapse {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: var(--additional-color);
+
+  &:hover {
+    color: var(--additional-color);
+  }
+}

@@ -1,0 +1,82 @@
+.danger-color {
+  color: #ff846d;
+}
+
+.success-color {
+  color: green;
+}
+
+.check-color {
+  color: #a9acf6;
+}
+
+.primary-color {
+  color: #a9acf6;
+}
+
+button.action-button,
+.action-button {
+  background: transparent;
+  color: var(--btn-icon-color);
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+
+  svg.svg-inline--fa {
+    width: 20px;
+    height: 20px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    color: var(--icon-basic-hover-color);
+  }
+  &.color-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    & > svg.svg-inline--fa {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      color: var(--event-focus-color);
+    }
+  }
+
+  &.danger-color-bg,
+  &.primary-color-bg {
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--icon-basic-hover-color);
+    }
+
+    & > svg.svg-inline--fa {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &.danger-color-bg {
+    background-color: #ff846d;
+  }
+
+  &.primary-color-bg {
+    background-color: #a9acf6;
+  }
+
+  &.big-size > svg.svg-inline--fa {
+    width: 18px;
+    height: 18px;
+  }
+}

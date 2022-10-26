@@ -1,0 +1,14 @@
+.home-menu {
+  font-family: var(--dm-sans);
+  font-weight: 500;
+  padding-top: 15px;
+  a {
+    color: var(--gray-700);
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    @media (min-width: 1200px) {
+      padding-left: 21px !important;
+      padding-right: 21px !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.custom-badge {
+  &.primary {
+    background-color: var(--icon-basic-color);
+  }
+
+  &.secondary {
+    //color: $inactive-text-color;
+    //background-color: $inactive-bg;
+  }
+
+  min-width: 96px;
+  font-size: var(--size-15);
+  font-weight: 100;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 16px;
+  padding: 2px 16px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
