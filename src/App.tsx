@@ -17,12 +17,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn chat bot
         </a>
       </header>
       <MessengerChat
         pageId="110906321050881"
-        themeColor={"#3578E5"}
+        themeColor={"#e97a28"}
         loggedInGreeting="loggedInGreeting"
         loggedOutGreeting="loggedOutGreeting"      
       />
