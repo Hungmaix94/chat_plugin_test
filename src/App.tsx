@@ -22,6 +22,8 @@ function App() {
       </header>
       <MessengerChat
         pageId="110906321050881"
+        debugMode={true}
+        greetingDialogDisplay={"hide"}
         themeColor={"#e97a28"}
         loggedInGreeting="loggedInGreeting"
         loggedOutGreeting="loggedOutGreeting"      
