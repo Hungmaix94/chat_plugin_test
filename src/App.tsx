@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 // import { MessengerChat } from "react-messenger-chat-plugin";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+export const FACEBOOK_PAGE_ID = '110906321050881';
 
 function App() {
   return (
@@ -29,9 +30,10 @@ function App() {
       {/*  loggedInGreeting="loggedInGreeting"*/}
       {/*  loggedOutGreeting="loggedOutGreeting"      */}
       {/*/>*/}
-        <MessengerCustomerChat
-            pageId="110906321050881"
-        />,
+      <MessengerCustomerChat
+          pageId={FACEBOOK_PAGE_ID}
+          themeColor={"#e97a28"}
+      />
     </div>
   );
 }
