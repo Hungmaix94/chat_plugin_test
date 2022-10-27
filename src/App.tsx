@@ -33,6 +33,7 @@ function App() {
       <MessengerCustomerChat
           pageId={FACEBOOK_PAGE_ID}
           themeColor={"#e97a28"}
+          loggedInGreeting={"holla hi there"}
       />
     </div>
   );
