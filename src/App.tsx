@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { MessengerChat } from "react-messenger-chat-plugin";
+// import { MessengerChat } from "react-messenger-chat-plugin";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   return (
@@ -20,14 +21,17 @@ function App() {
           Learn chat bot
         </a>
       </header>
-      <MessengerChat
-        pageId="110906321050881"
-        debugMode={true}
-        greetingDialogDisplay={"hide"}
-        themeColor={"#e97a28"}
-        loggedInGreeting="loggedInGreeting"
-        loggedOutGreeting="loggedOutGreeting"      
-      />
+      {/*<MessengerChat*/}
+      {/*  pageId="110906321050881"*/}
+      {/*  debugMode={true}*/}
+      {/*  greetingDialogDisplay={"hide"}*/}
+      {/*  themeColor={"#e97a28"}*/}
+      {/*  loggedInGreeting="loggedInGreeting"*/}
+      {/*  loggedOutGreeting="loggedOutGreeting"      */}
+      {/*/>*/}
+        <MessengerCustomerChat
+            pageId="110906321050881"
+        />,
     </div>
   );
 }
